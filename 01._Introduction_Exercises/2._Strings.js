@@ -4,16 +4,11 @@
 const numberOne = "1.10";
 const numberTwo = "2.30";
 
-const result1 = parseFloat(numberOne) + parseFloat(numberTwo)
-
-console.log(typeof (result1));
-
-console.log((parseFloat(numberOne) + parseFloat(numberTwo)).toFixed(2));
-console.log(typeof (result1.toFixed(2)));
-
 // add those two numbers and show the result
 // you cannot touch line 1 neither line 2
 
+const roundedSum = parseFloat(numberOne) + parseFloat(numberTwo);
+console.log(roundedSum);
 
 // --------------------------------------
 // Exercise 4 - Add the numbers and the total with 2 decimals
@@ -21,6 +16,11 @@ console.log(typeof (result1.toFixed(2)));
 const anotherNumberOne = "1.10";
 const anotherNumberTwo = "2.30";
 
+const sumWithDecimals = (parseFloat(anotherNumberOne) + parseFloat(anotherNumberTwo)).toFixed(5)
+
+console.log(typeof (roundedSum));
+console.log(typeof (sumWithDecimals));
+console.log(sumWithDecimals);
 
 // --------------------------------------
 // Exercise 5 - Decimals and average
@@ -31,8 +31,10 @@ const three = 98;
 
 // Show in the console the avg. with 5 decimals
 
+const average = (one + two + three) / 3;
+const averageWithFiveDecimals = average.toFixed(5)
 
-
+console.log(averageWithFiveDecimals);
 
 // --------------------------------------
 // Exercise 6 - Get the character by index
@@ -40,10 +42,9 @@ const three = 98;
 const letters = "abc";
 // Get me the character "c"
 
-console.log(letters.Po(3));
-
-
-
+const charAtIndexOfc = letters.charAt(2)
+console.log(charAtIndexOfc);
+console.log(typeof (charAtIndexOfc));
 
 // --------------------------------------
 // Exercise 7 - Replace
@@ -52,8 +53,9 @@ const fact = "You are learning javascript!";
 
 // capitalize the J in Javascript
 
+// .replace replaces first occurence of given string with a new string, returns an entirely new string - strings are immutable
+// .replaceAll would replace every occuring instance. 
+const factWithCapitalizedJ = fact.replace("javascript", "Javascript");
+console.log(factWithCapitalizedJ);
 
 // --------------------------------------
-
-
-

@@ -19,9 +19,7 @@ const year = "2025";
 const increment = 1;
 
 const newYearVersionOne = parseInt(year) + increment;
-
 const newYearVersionTwo = Number(year) + increment;
-
 const newYearVersionThree = + year + increment;
 
 console.log(newYearVersionThree);
